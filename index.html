@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="resources/css/styles.css" media="screen">
+    <script src="https://kit.fontawesome.com/980b68b366.js" crossorigin="anonymous"></script>
+    <title>Juego del gato</title>
+</head>
+
+<body>
+    <header>
+        <h3>Tic-tac-toe</h3>
+        <div id="panel-principal">
+            <h2>Selecciona un botón para empezar</h2>
+            <button type="button" id="x-btn"><i class="fas fa-times"></i></button>
+            <button type="button" id="o-btn"><i class="far fa-circle"></i></button>
+            <button title="Reiniciar juego" type="button" id="reiniciar-juego-btn"><i class="fas fa-reply"></i></button>
+    </header>
+    <main>
+        <div class="mensaje-turno-x none">
+            <p>Elegiste la ficha X para jugar</p>
+        </div>
+        <div class="mensaje-turno-o none">
+            <p>Elegiste la ficha O para jugar</p>
+        </div>
+
+        <table>
+            <tr>
+                <td id="c1"></td>
+                <td id="c2"></td>
+                <td id="c3"></td>
+            </tr>
+            <tr>
+                <td id="c4"></td>
+                <td id="c5"></td>
+                <td id="c6"></td>
+            </tr>
+            <tr>
+                <td id="c7"></td>
+                <td id="c8"></td>
+                <td id="c9"></td>
+            </tr>
+        </table>
+        <div class="mensaje-ganador-x none">
+            <p>El ganador es X</p>
+        </div>
+        <div class="mensaje-ganador-o none">
+            <p>El ganador es O</p>
+        </div>
+        <div class="mensaje-empate none">
+            <p>Hay un empate</p>
+        </div>
+
+    </main>
+    <script src="./resources/js/index.js" type="module"></script>
+</body>
+
+</html>
